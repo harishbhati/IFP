@@ -1,0 +1,29 @@
+body{
+	font-size: 12px;
+    font-family: 'futura-pt', Arial, sans-serif;
+    line-height: 1.25;
+    color: #000;
+    user-select: none;
+    -ms-touch-action: none;
+    -ms-user-select: none;
+    touch-action: none;
+        overflow: hidden;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+    padding-left: 0;
+}
+a{
+	text-decoration: none;
+ 	color: #000;
+}
+img {
+	display: block;
+    max-width: 100%;
+}
