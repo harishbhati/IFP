@@ -19,6 +19,7 @@
     					<p>3 Beds • 2.5 Baths • 2-Bay Garage • Two-Story</p>
     					<p>1,463 Sq. Ft</p>
     				</div>
+
     				<div class="drop-down">
     					<div class="selected">
     						<a href="javascript:void(0)">
@@ -27,32 +28,36 @@
     						</a>
     					</div>
     					<div class="options">
-							<ul class="dropdown">
-								<li><a href="javascript:void(0)">First Floor<span class="value">1</span></a></li>
-								<li><a href="javascript:void(0)">Second Floor<span class="value">2</span></a></li>
-								<li><a href="javascript:void(0)">Elevations<span class="value">3</span></a></li>
+							<ul class="dropdown" style="display: none;"><!--change here -->
+								<li><a href="javascript:void(0)">First Floor</a></li><!--change here -->
+								<li><a href="javascript:void(0)">Second Floor</a></li><!--change here -->
+								<li><a href="javascript:void(0)">Elevations</a></li><!--change here -->
 							</ul>
 						</div>
     				</div>
+    				<!--change here -->
     				<div class="nav-option">
-    					<ul>
-    						<li id="option" class="tooltips active">
-    							<a href="javascript:void(0)" title="Options"><span class="icon-list"></span><span>Options</span></a>
+    					<ul class="flex">
+    						<li class="tooltips">
+    							<a href="#option" title="Options"><span class="icon-list"></span><span>Options</span></a>
     						</li>
-    						<li id="furniture" class="tooltips">
-    							<a href="javascript:void(0)" title="Furniture"><span class="icon-bed"></span><span>Furniture</span></a>
+    						<li class="tooltips">
+    							<a href="#furniture" title="Furniture"><span class="icon-bed"></span><span>Furniture</span></a>
     						</li>
-    						<li id="notes" class="tooltips">
-    							<a href="javascript:void(0)" title="Notes"><span class="icon-notes"></span><span>Notes</span></a>
+    						<li class="tooltips">
+    							<a href="#notes" title="Notes"><span class="icon-notes"></span><span>Notes</span></a>
     						</li>
-    						<li id="help" class="tooltips">
-    							<a href="javascript:void(0)" title="Help"><span class="icon-help"></span><span>Help</span></a>
+    						<li class="tooltips">
+    							<a href="#gallery" title="Gallery"><span class="icon-help"></span><span>Gallery</span></a>
+    						</li>
+    						<li class="tooltips">
+    							<a href="#help" title="Help"><span class="icon-help"></span><span>Help</span></a>
     						</li>
     					</ul>
     				</div>
     			</div>
     			<div class="sidebar-option-holder">
-    				<div class="option-list option">
+    				<div class="option-list option" id="option">
     					<ul>
     						<li>
     							<label><input type="checkbox"><span>Cabinets at Hall</span></label>
@@ -71,13 +76,12 @@
     						</li>
     					</ul>
     				</div>
-    				<div class="option-list furniture">
+    				<div class="option-list furniture" id="furniture">
     					<ul>
-    						<li>
+    						<li class="accordion">
     							<a href="javascript:void(0);">
     								Bedroom
     								<span class="icon-arrow-dn"></span>
-    								<span class="icon-arrow-up"></span>
     							</a>
     							<ul class="sub-option-list">
     								<li>
@@ -109,11 +113,10 @@
     								</li>
     							</ul>
     						</li>
-							<li>
+							<li class="accordion">
     							<a href="javascript:void(0);">
     								Living
     								<span class="icon-arrow-dn"></span>
-    								<span class="icon-arrow-up"></span>
     							</a>
     							<ul class="sub-option-list">
     								<li>
@@ -127,11 +130,10 @@
     								</li>
     							</ul>
     						</li>
-    						<li>
+    						<li class="accordion">
     							<a href="javascript:void(0);">
     								Dining
     								<span class="icon-arrow-dn"></span>
-    								<span class="icon-arrow-up"></span>
     							</a>
     							<ul class="sub-option-list">
     								<li>
@@ -145,11 +147,10 @@
     								</li>
     							</ul>
     						</li>
-    						<li>
+    						<li class="accordion">
     							<a href="javascript:void(0);">
     								Accessories
     								<span class="icon-arrow-dn"></span>
-    								<span class="icon-arrow-up"></span>
     							</a>
     							<ul class="sub-option-list">
     								<li>
@@ -171,7 +172,7 @@
     						</li>
     					</ul>
     				</div>
-    				<div class="option-list notes">
+    				<div class="option-list notes" id="notes">
 	  					<ul>
     						<li>
     							<a href="javascript:void(0);">Click to Create Note <span class="icon-plus-circle"></span></a>
@@ -185,7 +186,7 @@
     								<li>
     									<span class="note-list-label">Size</span>
     									<div class="note-size">
-    										<span class="btn-note">S</span>
+    										<span class="btn-note active">S</span>
     										<span class="btn-note">M</span>
     										<span class="btn-note">L</span>
     									</div>
@@ -193,7 +194,7 @@
     								<li>
     									<span class="note-list-label">Style</span>
     									<div class="note-size">
-    										<span class="btn-note">I</span>
+    										<span class="btn-note active">I</span>
     										<span class="btn-note">B</span>
     										<span class="btn-note">U</span>
     									</div>
@@ -211,9 +212,25 @@
     						</li>
     					</ul>
     				</div>
+    				<div class="option-list gallery" id="gallery">
+    					<ul>
+    						<li>
+    							<label><input type="checkbox"><span>Master Bath</span></label>
+    						</li>
+    						<li>
+    							<label><input type="checkbox"><span>Master Bath 2</span></label>
+    						</li>
+    						<li>
+    							<label><input type="checkbox"><span>Master Bath 3</span></label>
+    						</li>
+    					</ul>
+    				</div>
+    				<div class="option-list help" id="help">
+    					<p>Help content goes here</p>
+    				</div>
     			</div>
     			<div class="sidebar-action-holder">
-    				<ul>
+    				<ul class="flex">
     					<li>
     						<a href="javascript:void(0);" class="action-btn share" id="shareBtn">
 	    						<span class="btn-icon icon-share"></span>
@@ -271,6 +288,6 @@
     		</section>
     	</main>
     	<script src="https://code.jquery.com/jquery-3.5.0.min.js" crossorigin="anonymous"></script>
-    	<script type="text/javascript" src=""></script>
+    	<script type="text/javascript" src="../src/js/main.js"></script>
     </body>
 </html>
