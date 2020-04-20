@@ -1,50 +1,61 @@
 .drop-down{
-  .selected{ 
-      a{
-      background:#fff no-repeat scroll right center;
-      display:block; 
-      border:1px solid #d7d7d7; 
-      border-radius:2px;
-      text-decoration:none;
-      color:#3179ac;
-      .icon-caret{
-        display: inline-block;
-        width: 25px
-      }
-      span{
-        cursor:pointer; 
-        display: inline-block; 
-        width: calc(100% - 30px);
-        padding:5px;
-        &.value{
-          display: none;
+  width: 185px;
+  margin: 0 auto 15px;
+  position: relative;
+  .options{
+    ul{
+    position: absolute;
+    background: #fff;
+    top: 100%;
+    left: 0;
+    border: 1px solid rgba(0,0,0,0.2);
+    width: 100%;
+    border-top: none;
+    transition: all 0.3s ease-out;
+    max-height: 400px;
+    z-index: 1;
+      li{
+        a{
+          display: block;
+          text-decoration: none;
+          color: #333;
+          padding: 7px 5px;
+          transition: all 0.3s ease-out;
+          border-bottom: 1px solid #e6e8ea;
+          &:hover{
+            background: rgba(131, 131, 131, 0.34);
+            color: #333;
+          }
+        }
+        &:last-child{
+          a{
+            border-bottom: none;
+          }
         }
       }
     }
   }
-  .option{
-    position:relative; 
-     ul{
-      background:#fff none repeat scroll 0 0;             
-      display:none;
-      list-style:none; 
-      padding:0px 0px; 
-      position:absolute; 
-      left:0px; 
-      top:32px; 
-      width:auto; 
-      min-width:170px;
-      border:1px solid #d7d7d7;
-      li a{
-          padding:5px; 
-          display:block;
-          text-decoration:none;
-          color:#3179ac;
-          &:hover{
-             background:#3179ac;
-  color:#fff;
-  transition:0.2s ease;
-          }
+  .selected{ 
+    a{
+      position: relative;
+      padding: 7px 10px;
+      background: #e0dfd3;
+      display: block;
+      border: 1px solid rgba(0,0,0,0.2);
+      transition: all 0.3s ease-out;
+      .icon-caret{
+        color: rgba(0,0,0,0.3);
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      span{
+        display: inline-block; 
+        width: 100%;
+        &.value{
+          display: none;
+        }
       }
     }
   }

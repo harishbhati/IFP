@@ -44,124 +44,300 @@ img {
 
 /* line 1, src/scss/_buttons.scss */
 .action-btn {
-  display: inline-block;
-  text-align: center;
-  border: 1px solid #56A8A4;
-  margin: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #56a8a4;
   font-size: 12px;
   cursor: pointer;
   background: rgba(86, 168, 164, 0.5);
-  margin-left: 8px;
+  transition: all 0.3s ease-out;
 }
 
-/* line 10, src/scss/_buttons.scss */
+/* line 11, src/scss/_buttons.scss */
+.action-btn:hover {
+  background: #56a8a4;
+}
+
+/* line 14, src/scss/_buttons.scss */
 .action-btn .btn-icon {
   display: inline-block;
   font-size: 15px;
   width: 28px;
   padding: 5px;
-  background: #56A8A4;
+  background: #56a8a4;
 }
 
-/* line 17, src/scss/_buttons.scss */
+/* line 21, src/scss/_buttons.scss */
 .action-btn .btn-text {
   display: inline-block;
   padding: 0 10px;
 }
 
-/* line 3, src/scss/_dropdown.scss */
-.drop-down .selected a {
-  background: #fff no-repeat scroll right center;
+/* line 1, src/scss/_dropdown.scss */
+.drop-down {
+  width: 185px;
+  margin: 0 auto 15px;
+  position: relative;
+}
+
+/* line 6, src/scss/_dropdown.scss */
+.drop-down .options ul {
+  position: absolute;
+  background: #fff;
+  top: 100%;
+  left: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 100%;
+  border-top: none;
+  transition: all 0.3s ease-out;
+  max-height: 400px;
+  z-index: 1;
+}
+
+/* line 18, src/scss/_dropdown.scss */
+.drop-down .options ul li a {
   display: block;
-  border: 1px solid #d7d7d7;
-  border-radius: 2px;
   text-decoration: none;
-  color: #3179ac;
+  color: #333;
+  padding: 7px 5px;
+  transition: all 0.3s ease-out;
+  border-bottom: 1px solid #e6e8ea;
 }
 
-/* line 10, src/scss/_dropdown.scss */
+/* line 25, src/scss/_dropdown.scss */
+.drop-down .options ul li a:hover {
+  background: rgba(131, 131, 131, 0.34);
+  color: #333;
+}
+
+/* line 31, src/scss/_dropdown.scss */
+.drop-down .options ul li:last-child a {
+  border-bottom: none;
+}
+
+/* line 39, src/scss/_dropdown.scss */
+.drop-down .selected a {
+  position: relative;
+  padding: 7px 10px;
+  background: #e0dfd3;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-out;
+}
+
+/* line 46, src/scss/_dropdown.scss */
 .drop-down .selected a .icon-caret {
-  display: inline-block;
-  width: 25px;
+  color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* line 14, src/scss/_dropdown.scss */
+/* line 53, src/scss/_dropdown.scss */
 .drop-down .selected a span {
-  cursor: pointer;
   display: inline-block;
-  width: calc(100% - 30px);
-  padding: 5px;
+  width: 100%;
 }
 
-/* line 19, src/scss/_dropdown.scss */
+/* line 56, src/scss/_dropdown.scss */
 .drop-down .selected a span.value {
   display: none;
 }
 
-/* line 25, src/scss/_dropdown.scss */
-.drop-down .option {
-  position: relative;
-}
-
-/* line 27, src/scss/_dropdown.scss */
-.drop-down .option ul {
-  background: #fff none repeat scroll 0 0;
-  display: none;
-  list-style: none;
-  padding: 0px 0px;
-  position: absolute;
-  left: 0px;
-  top: 32px;
-  width: auto;
-  min-width: 170px;
-  border: 1px solid #d7d7d7;
-}
-
-/* line 38, src/scss/_dropdown.scss */
-.drop-down .option ul li a {
-  padding: 5px;
-  display: block;
-  text-decoration: none;
-  color: #3179ac;
-}
-
-/* line 43, src/scss/_dropdown.scss */
-.drop-down .option ul li a:hover {
-  background: #3179ac;
-  color: #fff;
-  transition: 0.2s ease;
-}
-
-/* line 51, src/scss/_dropdown.scss */
+/* line 62, src/scss/_dropdown.scss */
 .drop-down span.value {
   display: none;
 }
 
 /* line 1, src/scss/_sidebar.scss */
 .ifp-sidebar {
+  position: relative;
   flex-basis: 275px;
   max-width: 275px;
   background-color: #FFF;
   border-right: 1px solid #ccc;
 }
 
-/* line 7, src/scss/_sidebar.scss */
+/* line 8, src/scss/_sidebar.scss */
 .sidebar-option-holder {
   height: 400px;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
-/* line 12, src/scss/_sidebar.scss */
+/* line 13, src/scss/_sidebar.scss */
 .plan-detail {
-  padding: 5px;
+  padding: 5px 5px 15px;
 }
 
-/* line 14, src/scss/_sidebar.scss */
+/* line 15, src/scss/_sidebar.scss */
 .plan-detail h2 {
   font-size: 20px;
   line-height: 1.7em;
   font-weight: normal;
+}
+
+/*sidebar option tab*/
+/* line 22, src/scss/_sidebar.scss */
+.nav-option {
+  background: #e0dfd3;
+}
+
+/* line 25, src/scss/_sidebar.scss */
+.nav-option ul li {
+  flex: 1;
+}
+
+/* line 27, src/scss/_sidebar.scss */
+.nav-option ul li a {
+  padding: 8px;
+  text-align: center;
+  display: block;
+}
+
+/* line 31, src/scss/_sidebar.scss */
+.nav-option ul li a.active {
+  background: #56A8A4;
+}
+
+/* line 35, src/scss/_sidebar.scss */
+.nav-option ul li span {
+  display: block;
+}
+
+/* line 38, src/scss/_sidebar.scss */
+.nav-option ul li span[class^="icon-"] {
+  margin-bottom: 5px;
+  font-size: 21px;
+}
+
+/* line 47, src/scss/_sidebar.scss */
+.option-list ul li {
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 49, src/scss/_sidebar.scss */
+.option-list ul li label {
+  position: relative;
+  vertical-align: middle;
+  display: block;
+  padding: 8px;
+}
+
+/* line 54, src/scss/_sidebar.scss */
+.option-list ul li label input[type="checkbox"] {
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 60, src/scss/_sidebar.scss */
+.option-list ul li .note-msg {
+  background: #e0dfd3;
+  color: #4c4c4c;
+  font-size: 11px;
+  padding: 5px;
+}
+
+/* line 65, src/scss/_sidebar.scss */
+.option-list ul li .note-msg .note-heading {
+  margin-bottom: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 70, src/scss/_sidebar.scss */
+.option-list ul li .note-msg p {
+  font-size: 10px;
+  line-height: 1.5em;
+  color: #2f2f2f;
+}
+
+/* line 79, src/scss/_sidebar.scss */
+.option-list .sub-option-list li {
+  padding: 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* line 84, src/scss/_sidebar.scss */
+.option-list .sub-option-list li:last-child {
+  border-bottom: none;
+}
+
+/* line 88, src/scss/_sidebar.scss */
+.option-list .sub-option-list .note-list-label {
+  color: #555555;
+  font-size: 12px;
+  font-weight: bold;
+  width: 50px;
+  margin-left: 15px;
+}
+
+/* line 95, src/scss/_sidebar.scss */
+.option-list .sub-option-list .btn-note {
+  min-width: 30px;
+  padding: 7px 7px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  background: #e0dfd3;
+  position: relative;
+  font-weight: bold;
+  cursor: pointer;
+  color: #555555;
+  font-size: 11px;
+  margin-right: 4px;
+}
+
+/* line 108, src/scss/_sidebar.scss */
+.option-list .sub-option-list .btn-note:hover, .option-list .sub-option-list .btn-note.active {
+  color: #fff;
+  background-color: #56a8a4;
+}
+
+/* line 116, src/scss/_sidebar.scss */
+.accordion a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 7px 5px;
+  width: 100%;
+}
+
+/* line 122, src/scss/_sidebar.scss */
+.accordion a img {
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+}
+
+/* line 127, src/scss/_sidebar.scss */
+.accordion a [class^="icon-arrow-"] {
+  margin-left: auto;
+  transition: .5s all ease;
+}
+
+/* line 132, src/scss/_sidebar.scss */
+.accordion a.active [class^="icon-arrow-"] {
+  transform: rotate(-180deg);
+}
+
+/* line 138, src/scss/_sidebar.scss */
+.sidebar-action-holder {
+  padding: 10px 5px;
+  background: #e0dfd3;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 143, src/scss/_sidebar.scss */
+.sidebar-action-holder ul {
+  justify-content: space-between;
 }
 
 /* line 1, src/scss/_main-content.scss */
@@ -190,11 +366,16 @@ img {
   background: #fff;
   display: inline-block;
   border-left: 1px solid #cfcfcf;
-  padding: 4px 5px;
+  padding: 5px 8px;
   cursor: pointer;
 }
 
-/* line 27, src/scss/_main-content.scss */
+/* line 25, src/scss/_main-content.scss */
+.ifp-top-nav ul li:first-child a {
+  border-left: none;
+}
+
+/* line 32, src/scss/_main-content.scss */
 .floor-holder {
   margin: 0 auto;
   display: flex;
@@ -202,13 +383,13 @@ img {
   align-items: center;
 }
 
-/* line 32, src/scss/_main-content.scss */
+/* line 37, src/scss/_main-content.scss */
 .floor-holder img {
   max-width: 90%;
   margin: 0 auto;
 }
 
-/* line 37, src/scss/_main-content.scss */
+/* line 42, src/scss/_main-content.scss */
 .ifp-customer-logo {
   position: absolute;
   right: 15px;

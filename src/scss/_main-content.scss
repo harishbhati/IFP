@@ -18,8 +18,13 @@
 			    background: #fff;
 			    display: inline-block;
 			    border-left: 1px solid #cfcfcf;
-			    padding: 4px 5px;
+			    padding: 5px 8px;
 			    cursor: pointer;
+			}
+			&:first-child{
+				a{
+					border-left: none;
+				}
 			}
 		}
 	}
