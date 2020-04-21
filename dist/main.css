@@ -152,6 +152,66 @@ img {
   display: none;
 }
 
+/* line 1, src/scss/_drawheader.scss */
+.draw-header {
+  background: #56a8a4;
+  width: calc(100% - 275px);
+  position: absolute;
+  top: 0;
+  left: 275px;
+  padding: 10px 15px;
+  font-size: 12px;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 4;
+}
+
+/* line 15, src/scss/_drawheader.scss */
+.draw-buttons .note-btn {
+  margin-right: 3px;
+  width: 25px;
+  height: 25px;
+  background: #838383;
+  border: 1px solid #000;
+  padding: 0px;
+  cursor: pointer;
+}
+
+/* line 23, src/scss/_drawheader.scss */
+.draw-buttons .note-btn:hover {
+  background: #fa8e26;
+  color: #fff;
+}
+
+/* line 28, src/scss/_drawheader.scss */
+.draw-buttons input[type="button"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 3px;
+  background-color: #ccc;
+}
+
+/* line 37, src/scss/_drawheader.scss */
+.draw-buttons input[type="button"].draw-button-selection {
+  background: #fff;
+}
+
+/* line 42, src/scss/_drawheader.scss */
+.draw-modal-bg {
+  position: absolute;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.66);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 /* line 1, src/scss/_sidebar.scss */
 .ifp-sidebar {
   position: relative;
@@ -159,21 +219,23 @@ img {
   max-width: 275px;
   background-color: #FFF;
   border-right: 1px solid #ccc;
+  z-index: 2;
+  height: 100%;
 }
 
-/* line 8, src/scss/_sidebar.scss */
+/* line 10, src/scss/_sidebar.scss */
 .sidebar-option-holder {
   height: 400px;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
-/* line 13, src/scss/_sidebar.scss */
+/* line 15, src/scss/_sidebar.scss */
 .plan-detail {
   padding: 5px 5px 15px;
 }
 
-/* line 15, src/scss/_sidebar.scss */
+/* line 17, src/scss/_sidebar.scss */
 .plan-detail h2 {
   font-size: 20px;
   line-height: 1.7em;
@@ -181,45 +243,45 @@ img {
 }
 
 /*sidebar option tab*/
-/* line 22, src/scss/_sidebar.scss */
+/* line 24, src/scss/_sidebar.scss */
 .nav-option {
   background: #e0dfd3;
 }
 
-/* line 25, src/scss/_sidebar.scss */
+/* line 27, src/scss/_sidebar.scss */
 .nav-option ul li {
   flex: 1;
 }
 
-/* line 27, src/scss/_sidebar.scss */
+/* line 29, src/scss/_sidebar.scss */
 .nav-option ul li a {
   padding: 8px;
   text-align: center;
   display: block;
 }
 
-/* line 31, src/scss/_sidebar.scss */
+/* line 33, src/scss/_sidebar.scss */
 .nav-option ul li a.active {
   background: #56A8A4;
 }
 
-/* line 35, src/scss/_sidebar.scss */
+/* line 37, src/scss/_sidebar.scss */
 .nav-option ul li span {
   display: block;
 }
 
-/* line 38, src/scss/_sidebar.scss */
+/* line 40, src/scss/_sidebar.scss */
 .nav-option ul li span[class^="icon-"] {
   margin-bottom: 5px;
   font-size: 21px;
 }
 
-/* line 47, src/scss/_sidebar.scss */
+/* line 49, src/scss/_sidebar.scss */
 .option-list ul li {
   border-bottom: 1px solid #ccc;
 }
 
-/* line 49, src/scss/_sidebar.scss */
+/* line 51, src/scss/_sidebar.scss */
 .option-list ul li label {
   position: relative;
   vertical-align: middle;
@@ -227,14 +289,14 @@ img {
   padding: 8px;
 }
 
-/* line 54, src/scss/_sidebar.scss */
+/* line 56, src/scss/_sidebar.scss */
 .option-list ul li label input[type="checkbox"] {
   margin-right: 8px;
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 60, src/scss/_sidebar.scss */
+/* line 62, src/scss/_sidebar.scss */
 .option-list ul li .note-msg {
   background: #e0dfd3;
   color: #4c4c4c;
@@ -242,21 +304,21 @@ img {
   padding: 5px;
 }
 
-/* line 65, src/scss/_sidebar.scss */
+/* line 67, src/scss/_sidebar.scss */
 .option-list ul li .note-msg .note-heading {
   margin-bottom: 3px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-/* line 70, src/scss/_sidebar.scss */
+/* line 72, src/scss/_sidebar.scss */
 .option-list ul li .note-msg p {
   font-size: 10px;
   line-height: 1.5em;
   color: #2f2f2f;
 }
 
-/* line 79, src/scss/_sidebar.scss */
+/* line 81, src/scss/_sidebar.scss */
 .option-list .sub-option-list li {
   padding: 10px 10px;
   display: flex;
@@ -264,12 +326,12 @@ img {
   align-items: center;
 }
 
-/* line 84, src/scss/_sidebar.scss */
+/* line 86, src/scss/_sidebar.scss */
 .option-list .sub-option-list li:last-child {
   border-bottom: none;
 }
 
-/* line 88, src/scss/_sidebar.scss */
+/* line 90, src/scss/_sidebar.scss */
 .option-list .sub-option-list .note-list-label {
   color: #555555;
   font-size: 12px;
@@ -278,7 +340,7 @@ img {
   margin-left: 15px;
 }
 
-/* line 95, src/scss/_sidebar.scss */
+/* line 97, src/scss/_sidebar.scss */
 .option-list .sub-option-list .btn-note {
   min-width: 30px;
   padding: 7px 7px;
@@ -294,13 +356,13 @@ img {
   margin-right: 4px;
 }
 
-/* line 108, src/scss/_sidebar.scss */
+/* line 110, src/scss/_sidebar.scss */
 .option-list .sub-option-list .btn-note:hover, .option-list .sub-option-list .btn-note.active {
   color: #fff;
   background-color: #56a8a4;
 }
 
-/* line 116, src/scss/_sidebar.scss */
+/* line 118, src/scss/_sidebar.scss */
 .accordion a {
   display: flex;
   flex-wrap: wrap;
@@ -309,25 +371,25 @@ img {
   width: 100%;
 }
 
-/* line 122, src/scss/_sidebar.scss */
+/* line 124, src/scss/_sidebar.scss */
 .accordion a img {
   margin-right: 15px;
   width: 50px;
   height: 50px;
 }
 
-/* line 127, src/scss/_sidebar.scss */
+/* line 129, src/scss/_sidebar.scss */
 .accordion a [class^="icon-arrow-"] {
   margin-left: auto;
   transition: .5s all ease;
 }
 
-/* line 132, src/scss/_sidebar.scss */
+/* line 134, src/scss/_sidebar.scss */
 .accordion a.active [class^="icon-arrow-"] {
   transform: rotate(-180deg);
 }
 
-/* line 138, src/scss/_sidebar.scss */
+/* line 140, src/scss/_sidebar.scss */
 .sidebar-action-holder {
   padding: 10px 5px;
   background: #e0dfd3;
@@ -335,7 +397,7 @@ img {
   text-align: center;
 }
 
-/* line 143, src/scss/_sidebar.scss */
+/* line 145, src/scss/_sidebar.scss */
 .sidebar-action-holder ul {
   justify-content: space-between;
 }
@@ -345,23 +407,25 @@ img {
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-/* line 6, src/scss/_main-content.scss */
+/* line 8, src/scss/_main-content.scss */
 .ifp-content {
   flex-basis: calc(100% - 275px);
   max-width: calc(100% - 275px);
 }
 
-/* line 10, src/scss/_main-content.scss */
+/* line 12, src/scss/_main-content.scss */
 .ifp-top-nav {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 9;
+  z-index: 2;
 }
 
-/* line 17, src/scss/_main-content.scss */
+/* line 19, src/scss/_main-content.scss */
 .ifp-top-nav ul li a {
   background: #fff;
   display: inline-block;
@@ -370,21 +434,19 @@ img {
   cursor: pointer;
 }
 
-/* line 25, src/scss/_main-content.scss */
+/* line 27, src/scss/_main-content.scss */
 .ifp-top-nav ul li:first-child a {
   border-left: none;
 }
 
-/* line 32, src/scss/_main-content.scss */
-.floor-holder {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* line 34, src/scss/_main-content.scss */
+.floor-div {
+  position: relative;
+  z-index: 3;
 }
 
 /* line 37, src/scss/_main-content.scss */
-.floor-holder img {
+.floor-div img {
   max-width: 90%;
   margin: 0 auto;
 }
@@ -394,5 +456,13 @@ img {
   position: absolute;
   right: 15px;
   bottom: 5px;
-  z-index: 9;
+  z-index: 2;
+}
+
+/* line 48, src/scss/_main-content.scss */
+.ifp-options {
+  position: absolute;
+  right: 10px;
+  top: 100px;
+  z-index: 2;
 }
