@@ -1,0 +1,50 @@
+.draw-header {
+    background: #56a8a4;
+    width: calc(100% - 275px);
+    position: absolute;
+    top: 0;
+    left: 275px;
+    padding: 10px 15px;
+    font-size: 12px;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+}
+.draw-buttons{
+	.note-btn{
+	    margin-right: 3px;
+	    width: 25px;
+	    height: 25px;
+	    background: #838383;
+	    border: 1px solid #000;
+	    padding: 0px;
+	    cursor: pointer;
+	    &:hover{
+    	    background: #fa8e26;
+    		color: #fff;
+	    }
+	}
+	input[type="button"]{
+	    cursor: pointer;
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+	    border: none;
+	    padding: 5px 10px;
+        margin-left: 3px;
+	    background-color: #ccc;
+	    &.draw-button-selection{
+			background: #fff;
+		}
+	}
+}
+.draw-modal-bg{
+	position: absolute;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.66);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

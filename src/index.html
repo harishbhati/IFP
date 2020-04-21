@@ -263,20 +263,30 @@
     					</li>
     				</ul>
     			</div>
-    			<div class="ifp-container">
-    				<div class="floor-holder">
-    					<img src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/Arizona/Village_at_Heritage_Crossing/2214/IMAGES//ELEVATIONS/Elev_C.jpg" alt="Elevation" />
+    			<div class="ifp-container ifp-section">
+    				<!-- when click on draw button pass style="display: flex;"-->
+    				<div class="draw-header flex" style="display: none;">
+			            <p>Tap / Click a location on the plan to draw.</p>
+			            <div class="draw-buttons">
+		                    <button class="note-btn" title="Select color" value="black">&nbsp;</button>
+			                
+			                <input type="button" value="Draw" id="pen" class="pen draw-button-selection">
+			                <input type="button" value="Select" class="selectLine">
+			                <input type="button" value="Delete" class="deleteLine">
+
+			                <input type="button" value="Clear" onclick="clearArea();">
+			                <input type="button" value="Close" onclick="CloseDrawBox();">
+			            </div>
+			        </div>
+			        <!-- when click on draw button pass style="display: flex;"-->
+			        <div class="draw-modal-bg" style="display: none"></div>
+    				<div id="svg-container">
+	    				<div class="floor-div">
+	    					<img src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/Arizona/Village_at_Heritage_Crossing/2214/IMAGES//ELEVATIONS/Elev_C.jpg" alt="Elevation" />
+	    				</div>
     				</div>
     			</div>
     			<div class="ifp-options">
-    				<!-- <ul>
-    					<li><span class="icon-zoom-in"></span></li>
-    					<li><span class="icon-zoom-out"></span></li>
-    					<li><span class="icon-fit"></span></li>
-    					<li><span class="icon-flip"></span></li>
-    					<li><span class="icon-undo"></span></li>
-    					<li><span class="icon-reset"></span></li>
-    				</ul> -->
     			</div>
     			<div class="ifp-customer-logo">
     				<div class="customer-logo">
