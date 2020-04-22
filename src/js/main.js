@@ -76,4 +76,17 @@ $( document ).ready(function() {
 		$(this).toggleClass("active");
 		$(this).siblings("a").removeClass("active");
 	});
+
+	//modals
+	$("#shareBtn").click(function(){
+		$("#shareModal,.draw-modal-bg").css('display','flex');
+	});
+
+	$("#planSave").click(function(){
+		$("#signInModal,.draw-modal-bg").css('display','flex');
+	});
+
+	$("#planPrint").click(function(){
+		$("#printModal,.draw-modal-bg").css('display','flex');
+	});
 });

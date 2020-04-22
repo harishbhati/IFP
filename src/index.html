@@ -1,303 +1,414 @@
 <!DOCTYPE html>
 <html>
-    <head>
-	    <title>IFP Title</title>
-	    <link rel="stylesheet" type="text/css" href="../src/fonts/font.css">
-	    <link rel="stylesheet" type="text/css" href="../dist/main.css">
-    </head>
-    <body>
-    	<main class="ifp-container">
-    		<aside class="ifp-sidebar">
-    			<div class="sidebar-header">
-    				<div class="preview-image">
-    					<img id="thumb-image" src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/Arizona/Village_at_Heritage_Crossing/2214/IMAGES//ELEVATIONS/Elev_C.jpg" alt="Elevation" />
-    				</div>
-    				<div class="plan-detail">
-    					<div id="originalPlan" class="plan-name">
-    						<h2>Hamlet / 2214</h2>
-    					</div>
-    					<p>3 Beds • 2.5 Baths • 2-Bay Garage • Two-Story</p>
-    					<p>1,463 Sq. Ft</p>
-    				</div>
 
-    				<div class="drop-down">
-    					<div class="selected">
-    						<a href="javascript:void(0)">
-	    						<span id="currentFloor">First Floor</span>
-	    						<i class="icon-caret"></i>
-    						</a>
-    					</div>
-    					<div class="options">
-							<ul class="dropdown" style="display: none;"><!--change here -->
-								<li><a href="javascript:void(0)">First Floor</a></li><!--change here -->
-								<li><a href="javascript:void(0)">Second Floor</a></li><!--change here -->
-								<li><a href="javascript:void(0)">Elevations</a></li><!--change here -->
+<head>
+	<title>IFP Title</title>
+	<link rel="stylesheet" type="text/css" href="../src/fonts/font.css">
+	<link rel="stylesheet" type="text/css" href="../dist/main.css">
+</head>
+
+<body>
+	<main class="ifp-container">
+		<aside class="ifp-sidebar">
+			<div class="sidebar-header">
+				<div class="preview-image">
+					<img id="thumb-image"
+						src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/Arizona/Village_at_Heritage_Crossing/2214/IMAGES//ELEVATIONS/Elev_C.jpg"
+						alt="Elevation" />
+				</div>
+				<div class="plan-detail">
+					<div id="originalPlan" class="plan-name">
+						<h2>Hamlet / 2214</h2>
+					</div>
+					<p>3 Beds • 2.5 Baths • 2-Bay Garage • Two-Story</p>
+					<p>1,463 Sq. Ft</p>
+				</div>
+
+				<div class="drop-down">
+					<div class="selected">
+						<a href="javascript:void(0)">
+							<span id="currentFloor">First Floor</span>
+							<i class="icon-caret"></i>
+						</a>
+					</div>
+					<div class="options">
+						<ul class="dropdown" style="display: none;">
+							<!--change here -->
+							<li><a href="javascript:void(0)">First Floor</a></li>
+							<!--change here -->
+							<li><a href="javascript:void(0)">Second Floor</a></li>
+							<!--change here -->
+							<li><a href="javascript:void(0)">Elevations</a></li>
+							<!--change here -->
+						</ul>
+					</div>
+				</div>
+				<!--change here -->
+				<div class="nav-option">
+					<ul class="flex">
+						<li class="tooltips">
+							<a href="#option" title="Options"><span class="icon-list"></span><span>Options</span></a>
+						</li>
+						<li class="tooltips">
+							<a href="#furniture" title="Furniture"><span
+									class="icon-bed"></span><span>Furniture</span></a>
+						</li>
+						<li class="tooltips">
+							<a href="#notes" title="Notes"><span class="icon-notes"></span><span>Notes</span></a>
+						</li>
+						<li class="tooltips">
+							<a href="#gallery" title="Gallery"><span class="icon-help"></span><span>Gallery</span></a>
+						</li>
+						<li class="tooltips">
+							<a href="#help" title="Help"><span class="icon-help"></span><span>Help</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="sidebar-option-holder">
+				<div class="option-list option" id="option">
+					<ul>
+						<li>
+							<label><input type="checkbox"><span>Cabinets at Hall</span></label>
+						</li>
+						<li>
+							<label><input type="checkbox"><span>Sink at Bath 2</span></label>
+						</li>
+						<li>
+							<label><input type="checkbox"><span>Door at Master Bath</span></label>
+						</li>
+						<li>
+							<div class="note-msg">
+								<p class="note-heading">Select Options</p>
+								<p>Choose from the available options to customize your floor plan. If an option is not
+									initially selectable it will require another option to be selected or deselected
+									before proceeding.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="option-list furniture" id="furniture">
+					<ul>
+						<li class="accordion">
+							<a href="javascript:void(0);">
+								Bedroom
+								<span class="icon-arrow-dn"></span>
+							</a>
+							<ul class="sub-option-list">
+								<li>
+									<a href="javascript:void(0);">
+										<img
+											src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/_FURNITURE/SVG/Color_Bed_King.svg">
+										<div class="furniture-detail">
+											<div class="furniture-name">King Bed</div>
+											<div class="furniture-description">76 x 80</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<img
+											src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/_FURNITURE/SVG/Color_Bed_King.svg">
+										<div class="furniture-detail">
+											<div class="furniture-name">Queen Bed</div>
+											<div class="furniture-description">60 x 80</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<img
+											src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/_FURNITURE/SVG/Color_Bed_King.svg">
+										<div class="furniture-detail">
+											<div class="furniture-name">Twin Bed</div>
+											<div class="furniture-description">40 x 80</div>
+										</div>
+									</a>
+								</li>
 							</ul>
-						</div>
-    				</div>
-    				<!--change here -->
-    				<div class="nav-option">
-    					<ul class="flex">
-    						<li class="tooltips">
-    							<a href="#option" title="Options"><span class="icon-list"></span><span>Options</span></a>
-    						</li>
-    						<li class="tooltips">
-    							<a href="#furniture" title="Furniture"><span class="icon-bed"></span><span>Furniture</span></a>
-    						</li>
-    						<li class="tooltips">
-    							<a href="#notes" title="Notes"><span class="icon-notes"></span><span>Notes</span></a>
-    						</li>
-    						<li class="tooltips">
-    							<a href="#gallery" title="Gallery"><span class="icon-help"></span><span>Gallery</span></a>
-    						</li>
-    						<li class="tooltips">
-    							<a href="#help" title="Help"><span class="icon-help"></span><span>Help</span></a>
-    						</li>
-    					</ul>
-    				</div>
-    			</div>
-    			<div class="sidebar-option-holder">
-    				<div class="option-list option" id="option">
-    					<ul>
-    						<li>
-    							<label><input type="checkbox"><span>Cabinets at Hall</span></label>
-    						</li>
-    						<li>
-    							<label><input type="checkbox"><span>Sink at Bath 2</span></label>
-    						</li>
-    						<li>
-    							<label><input type="checkbox"><span>Door at Master Bath</span></label>
-    						</li>
-    						<li>
-    							<div class="note-msg">
-    								<p class="note-heading">Select Options</p>
-    								<p>Choose from the available options to customize your floor plan. If an option is not initially selectable it will require another option to be selected or deselected before proceeding.</p>
-    							</div>
-    						</li>
-    					</ul>
-    				</div>
-    				<div class="option-list furniture" id="furniture">
-    					<ul>
-    						<li class="accordion">
-    							<a href="javascript:void(0);">
-    								Bedroom
-    								<span class="icon-arrow-dn"></span>
-    							</a>
-    							<ul class="sub-option-list">
-    								<li>
-    									<a href="javascript:void(0);">
-    										<img src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/_FURNITURE/SVG/Color_Bed_King.svg">
-    										<div class="furniture-detail">
-    											<div class="furniture-name">King Bed</div>
-    											<div class="furniture-description">76 x 80</div>
-    										</div>
-    									</a>
-    								</li>
-									<li>
-    									<a href="javascript:void(0);">
-    										<img src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/_FURNITURE/SVG/Color_Bed_King.svg">
-    										<div class="furniture-detail">
-    											<div class="furniture-name">Queen Bed</div>
-    											<div class="furniture-description">60 x 80</div>
-    										</div>
-    									</a>
-    								</li>
-									<li>
-    									<a href="javascript:void(0);">
-    										<img src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/_FURNITURE/SVG/Color_Bed_King.svg">
-    										<div class="furniture-detail">
-    											<div class="furniture-name">Twin Bed</div>
-    											<div class="furniture-description">40 x 80</div>
-    										</div>
-    									</a>
-    								</li>
-    							</ul>
-    						</li>
-							<li class="accordion">
-    							<a href="javascript:void(0);">
-    								Living
-    								<span class="icon-arrow-dn"></span>
-    							</a>
-    							<ul class="sub-option-list">
-    								<li>
-    									<a href="javascript:void(0);">
-    										<img src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/_FURNITURE/SVG/Color_Sofa_Sectional.svg">
-    										<div class="furniture-detail">
-    											<div class="furniture-name">Sofa - Large</div>
-    											<div class="furniture-description">76 x 80</div>
-    										</div>
-    									</a>
-    								</li>
-    							</ul>
-    						</li>
-    						<li class="accordion">
-    							<a href="javascript:void(0);">
-    								Dining
-    								<span class="icon-arrow-dn"></span>
-    							</a>
-    							<ul class="sub-option-list">
-    								<li>
-    									<a href="javascript:void(0);">
-    										<img src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/_FURNITURE/SVG/Color_Table_Breakfast.svg">
-    										<div class="furniture-detail">
-    											<div class="furniture-name">Breakfast Table</div>
-    											<div class="furniture-description">76 x 80</div>
-    										</div>
-    									</a>
-    								</li>
-    							</ul>
-    						</li>
-    						<li class="accordion">
-    							<a href="javascript:void(0);">
-    								Accessories
-    								<span class="icon-arrow-dn"></span>
-    							</a>
-    							<ul class="sub-option-list">
-    								<li>
-    									<a href="javascript:void(0);">
-    										<img src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/_FURNITURE/SVG/Color_Pool_Table.svg">
-    										<div class="furniture-detail">
-    											<div class="furniture-name">Pool Table</div>
-    											<div class="furniture-description">76 x 80</div>
-    										</div>
-    									</a>
-    								</li>
-    							</ul>
-    						</li>
-    						<li>
-    							<div class="note-msg">
-    								<p class="note-heading">Place Furniture</p>
-    								<p>Select from the available libraries and “drag and drop” the furniture directly onto the floor plan. Use the icons in the upper right corner of the furniture to rotate, scale and delete the individual components.</p>
-    							</div>
-    						</li>
-    					</ul>
-    				</div>
-    				<div class="option-list notes" id="notes">
-	  					<ul>
-    						<li>
-    							<a href="javascript:void(0);">Click to Create Note <span class="icon-plus-circle"></span></a>
-    						</li>
-    						<li>
-    							<ul class="sub-option-list">
-    								<li>
-    									<span class="note-list-label">Color</span>
-    									<span class="note-color"></span>
-    								</li>
-    								<li>
-    									<span class="note-list-label">Size</span>
-    									<div class="note-size">
-    										<span class="btn-note active">S</span>
-    										<span class="btn-note">M</span>
-    										<span class="btn-note">L</span>
-    									</div>
-    								</li>
-    								<li>
-    									<span class="note-list-label">Style</span>
-    									<div class="note-size">
-    										<span class="btn-note active">I</span>
-    										<span class="btn-note">B</span>
-    										<span class="btn-note">U</span>
-    									</div>
-    								</li>
-    								<li><span class="btn-note">Turn off Room Labels</span></li>
-    								<li><span class="btn-note">Draw on Plan</span></li>
-    								<li><span class="btn-note">Draw Line on Plan</span></li>
-    							</ul>
-    						</li>
-    						<li>
-    							<div class="note-msg">
-    								<p class="note-heading">Add Notes</p>
-    								<p>Create and place notes on the plan. Rotate and move them to your desired location. Use the Draw On Plan feature to add custom hand drawn notes and mark-ups.</p>
-    							</div>
-    						</li>
-    					</ul>
-    				</div>
-    				<div class="option-list gallery" id="gallery">
-    					<ul>
-    						<li>
-    							<label><input type="checkbox"><span>Master Bath</span></label>
-    						</li>
-    						<li>
-    							<label><input type="checkbox"><span>Master Bath 2</span></label>
-    						</li>
-    						<li>
-    							<label><input type="checkbox"><span>Master Bath 3</span></label>
-    						</li>
-    					</ul>
-    				</div>
-    				<div class="option-list help" id="help">
-    					<p>Help content goes here</p>
-    				</div>
-    			</div>
-    			<div class="sidebar-action-holder">
-    				<ul class="flex">
-    					<li>
-    						<a href="javascript:void(0);" class="action-btn share" id="shareBtn">
-	    						<span class="btn-icon icon-share"></span>
-	    						<span class="btn-text">Share</span>
-    						</a>
-    					</li>
-    					<li>
-    						<a href="javascript:void(0);" class="action-btn save" id="planSave">
-    							<span class="btn-icon icon-save"></span> 
-    							<span class="btn-text">Save</span>
-    						</a>
-    					</li>
-    					<li>
-    						<a href="javascript:void(0);" class="action-btn print" id="planPrint">
-    							<span class="btn-icon icon-print"></span> 
-    							<span class="btn-text">Print</span>
-    						</a>
-    					</li>
-    				</ul>
-    			</div>
-    		</aside>
-    		<section class="ifp-content">
-    			<div class="ifp-top-nav">
-    				<ul class="flex">
-    					<li>
-    						<a href="javascript:void(0);"><span class="icon-email"></span> Contact Us</a>
-    					</li>
-    					<li>
-    						<a href="javascript:void(0);"><span class="icon-login"></span> Sign In</a>
-    					</li>
-    				</ul>
-    			</div>
-    			<div class="ifp-container ifp-section">
-    				<!-- when click on draw button pass style="display: flex;"-->
-    				<div class="draw-header flex" style="display: none;">
-			            <p>Tap / Click a location on the plan to draw.</p>
-			            <div class="draw-buttons">
-		                    <button class="note-btn" title="Select color" value="black">&nbsp;</button>
-			                
-			                <input type="button" value="Draw" id="pen" class="pen draw-button-selection">
-			                <input type="button" value="Select" class="selectLine">
-			                <input type="button" value="Delete" class="deleteLine">
+						</li>
+						<li class="accordion">
+							<a href="javascript:void(0);">
+								Living
+								<span class="icon-arrow-dn"></span>
+							</a>
+							<ul class="sub-option-list">
+								<li>
+									<a href="javascript:void(0);">
+										<img
+											src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/_FURNITURE/SVG/Color_Sofa_Sectional.svg">
+										<div class="furniture-detail">
+											<div class="furniture-name">Sofa - Large</div>
+											<div class="furniture-description">76 x 80</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="accordion">
+							<a href="javascript:void(0);">
+								Dining
+								<span class="icon-arrow-dn"></span>
+							</a>
+							<ul class="sub-option-list">
+								<li>
+									<a href="javascript:void(0);">
+										<img
+											src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/_FURNITURE/SVG/Color_Table_Breakfast.svg">
+										<div class="furniture-detail">
+											<div class="furniture-name">Breakfast Table</div>
+											<div class="furniture-description">76 x 80</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="accordion">
+							<a href="javascript:void(0);">
+								Accessories
+								<span class="icon-arrow-dn"></span>
+							</a>
+							<ul class="sub-option-list">
+								<li>
+									<a href="javascript:void(0);">
+										<img
+											src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/_FURNITURE/SVG/Color_Pool_Table.svg">
+										<div class="furniture-detail">
+											<div class="furniture-name">Pool Table</div>
+											<div class="furniture-description">76 x 80</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<div class="note-msg">
+								<p class="note-heading">Place Furniture</p>
+								<p>Select from the available libraries and “drag and drop” the furniture directly onto
+									the floor plan. Use the icons in the upper right corner of the furniture to rotate,
+									scale and delete the individual components.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="option-list notes" id="notes">
+					<ul>
+						<li>
+							<a href="javascript:void(0);">Click to Create Note <span
+									class="icon-plus-circle"></span></a>
+						</li>
+						<li>
+							<ul class="sub-option-list">
+								<li>
+									<span class="note-list-label">Color</span>
+									<span class="note-color"></span>
+								</li>
+								<li>
+									<span class="note-list-label">Size</span>
+									<div class="note-size">
+										<span class="btn-note active">S</span>
+										<span class="btn-note">M</span>
+										<span class="btn-note">L</span>
+									</div>
+								</li>
+								<li>
+									<span class="note-list-label">Style</span>
+									<div class="note-size">
+										<span class="btn-note active">I</span>
+										<span class="btn-note">B</span>
+										<span class="btn-note">U</span>
+									</div>
+								</li>
+								<li><span class="btn-note">Turn off Room Labels</span></li>
+								<li><span class="btn-note">Draw on Plan</span></li>
+								<li><span class="btn-note">Draw Line on Plan</span></li>
+							</ul>
+						</li>
+						<li>
+							<div class="note-msg">
+								<p class="note-heading">Add Notes</p>
+								<p>Create and place notes on the plan. Rotate and move them to your desired location.
+									Use the Draw On Plan feature to add custom hand drawn notes and mark-ups.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="option-list gallery" id="gallery">
+					<ul>
+						<li>
+							<label><input type="checkbox"><span>Master Bath</span></label>
+						</li>
+						<li>
+							<label><input type="checkbox"><span>Master Bath 2</span></label>
+						</li>
+						<li>
+							<label><input type="checkbox"><span>Master Bath 3</span></label>
+						</li>
+					</ul>
+				</div>
+				<div class="option-list help" id="help">
+					<p>Help content goes here</p>
+				</div>
+			</div>
+			<div class="sidebar-action-holder">
+				<ul class="flex">
+					<li>
+						<a href="javascript:void(0);" class="action-btn share" id="shareBtn">
+							<span class="btn-icon icon-share"></span>
+							<span class="btn-text">Share</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="action-btn save" id="planSave">
+							<span class="btn-icon icon-save"></span>
+							<span class="btn-text">Save</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="action-btn print" id="planPrint">
+							<span class="btn-icon icon-print"></span>
+							<span class="btn-text">Print</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<section class="ifp-content">
+			<div class="ifp-top-nav">
+				<ul class="flex">
+					<li>
+						<a href="javascript:void(0);"><span class="icon-email"></span> Contact Us</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);"><span class="icon-login"></span> Sign In</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ifp-container ifp-section">
+				<!-- when click on draw button pass style="display: flex;"-->
+				<div class="draw-header flex" style="display: none;">
+					<p>Tap / Click a location on the plan to draw.</p>
+					<div class="draw-buttons">
+						<button class="note-btn" title="Select color" value="black">&nbsp;</button>
 
-			                <input type="button" value="Clear" onclick="clearArea();">
-			                <input type="button" value="Close" onclick="CloseDrawBox();">
-			            </div>
-			        </div>
-			        <!-- when click on draw button pass style="display: flex;"-->
-			        <div class="draw-modal-bg" style="display: none"></div>
-    				<div id="svg-container">
-	    				<div class="floor-div">
-	    					<img src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/Arizona/Village_at_Heritage_Crossing/2214/IMAGES//ELEVATIONS/Elev_C.jpg" alt="Elevation" />
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="ifp-options">
-    			</div>
-    			<div class="ifp-customer-logo">
-    				<div class="customer-logo">
-    					<a href="https://www.woodsidehomes.com/" target="_blank">
-    						<img src="https://ifp.thebdxinteractive.com/CMS/WoodsideHomes/_LOGOS/logo.png" alt="Logo">
-    					</a>
-    				</div>
-    			</div>
-    		</section>
-    	</main>
-    	<script src="https://code.jquery.com/jquery-3.5.0.min.js" crossorigin="anonymous"></script>
-    	<script type="text/javascript" src="../src/js/main.js"></script>
-    </body>
+						<input type="button" value="Draw" id="pen" class="pen draw-button-selection">
+						<input type="button" value="Select" class="selectLine">
+						<input type="button" value="Delete" class="deleteLine">
+
+						<input type="button" value="Clear" onclick="clearArea();">
+						<input type="button" value="Close" onclick="CloseDrawBox();">
+					</div>
+				</div>
+				<div id="svg-container">
+					<div class="floor-div">
+						<img src="https://ifp.thebdxinteractive.com/cms/WoodsideHomes/Arizona/Village_at_Heritage_Crossing/2214/IMAGES//ELEVATIONS/Elev_C.jpg"
+							alt="Elevation" />
+					</div>
+				</div>
+			</div>
+			<div class="ifp-options">
+			</div>
+			<div class="ifp-customer-logo">
+				<div class="customer-logo">
+					<a href="https://www.woodsidehomes.com/" target="_blank">
+						<img src="https://ifp.thebdxinteractive.com/CMS/WoodsideHomes/_LOGOS/logo.png" alt="Logo">
+					</a>
+				</div>
+			</div>
+		</section>
+		<!--Share Modal-->
+		<div class="modal" id="shareModal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<span class="icon icon-reset"></span>
+						<h3>Share Your Custom Plan</h3>
+					</div>
+					<div class="close">
+						<span class="icon icon-reset"></span>
+					</div>
+				</div>
+				<div class="modal-body share-modal">
+
+				</div>
+			</div>
+		</div>
+		<!-- Sign In Modal -->
+		<div class="modal" id="signInModal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<span class="icon icon-reset"></span>
+						<h3>Sign In</h3>
+					</div>
+					<div class="close">
+						<span class="icon icon-reset"></span>
+					</div>
+				</div>
+				<div class="modal-body sign-in-modal">
+					<p class="tc form-title">
+						Sign in to open and save your designs.
+					</p>
+					<form action="">
+						<p class="tc">
+							<input type="email" name="email" placeholder="Email">
+							<span class="field-validation-error"></span>
+						</p>
+						<p class="tc">
+							<input type="password" name="password" placeholder="Password">
+							<span class="field-validation-error"></span>
+						</p>
+						<button class="action-btn">Sign In</button>
+					</form>
+					<p class="tc">
+						<a href="" class="link-signup-forgot"> Sign Up</a>
+					</p>
+					<p class="tc">
+						<a href="" class="link-signup-forgot">Forgot Password?</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- Print Modal -->
+		<div class="modal" id="printModal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<span class="icon icon-reset"></span>
+						<h3>Print</h3>
+					</div>
+					<div class="close">
+						<span class="icon icon-reset"></span>
+					</div>
+				</div>
+				<div class="modal-body sign-in-modal">
+					<p class="tc form-title">
+						Thank you for your interest in Belissima 4560 - Villa | Beacon Homes.To print your customized
+						plan, please enter your name and email address.
+					</p>
+					<form action="">
+						<p class="tc">
+							<input type="email" name="email" placeholder="Email">
+							<span class="field-validation-error"></span>
+						</p>
+						<p class="tc">
+							<input type="password" name="password" placeholder="Password">
+							<span class="field-validation-error"></span>
+						</p>
+						<p class="tc">
+							<input type="text" name="" placeholder="Where do you want to live?">
+							<span class="field-validation-error"></span>
+						</p>
+						<button class="action-btn">Sign In</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- when click on draw button pass style="display: flex;"-->
+		<div class="draw-modal-bg" style="display: none"></div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.5.0.min.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../src/js/main.js"></script>
+</body>
+
 </html>

@@ -1,4 +1,16 @@
 .flex{
 	display: flex;
+}
+@mixin flex{
+	display: flex;
 	flex-wrap: wrap;
+}
+
+@mixin flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tc{
+	text-align: center;
 }
