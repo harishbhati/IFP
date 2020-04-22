@@ -507,80 +507,95 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  /* title*/
 }
 
-/* line 24, src/scss/_modal.scss */
+/* line 25, src/scss/_modal.scss */
 .modal .modal-content .modal-header .modal-title h3 {
   color: #fff;
   font-weight: bold;
   margin-left: 8px;
-  font-size: 16px;
+  font-size: 1.33em;
+  line-height: 1.52em;
 }
 
-/* line 31, src/scss/_modal.scss */
+/* line 33, src/scss/_modal.scss */
 .modal .modal-content .modal-header .icon {
-  font-size: 16px;
+  font-size: 1.33em;
   color: #fff;
 }
 
-/* line 36, src/scss/_modal.scss */
-.modal .modal-content .modal-body {
-  padding-bottom: 20px;
+/* line 37, src/scss/_modal.scss */
+.modal .modal-content .modal-header .close-modal {
+  cursor: pointer;
 }
 
-/* line 38, src/scss/_modal.scss */
+/* line 41, src/scss/_modal.scss */
+.modal .modal-content .modal-body {
+  padding-bottom: 20px;
+  /*share-modal*/
+  /* signin and print modal */
+}
+
+/* line 44, src/scss/_modal.scss */
 .modal .modal-content .modal-body.share-modal {
   margin: 16px auto;
   width: 203px;
   height: 32px;
 }
 
-/* line 43, src/scss/_modal.scss */
-.modal .modal-content .modal-body p {
+/* line 51, src/scss/_modal.scss */
+.modal .modal-content .modal-body.modal-w-form p {
   margin: 15px 0;
 }
 
-/* line 46, src/scss/_modal.scss */
-.modal .modal-content .modal-body .form-title {
+/* line 54, src/scss/_modal.scss */
+.modal .modal-content .modal-body.modal-w-form .sub-title {
   color: #999;
-  font-size: 1em;
+  font-size: 1.067em;
+  line-height: 1.5em;
+}
+
+/* line 58, src/scss/_modal.scss */
+.modal .modal-content .modal-body.modal-w-form .sub-title.print-sub-title {
   padding: 10px;
   text-align: justify;
 }
 
-/* line 53, src/scss/_modal.scss */
-.modal .modal-content .modal-body form input {
+/* line 64, src/scss/_modal.scss */
+.modal .modal-content .modal-body.modal-w-form form input {
   width: 70%;
   background: #ddd;
   border: none;
   padding: 7px 5px;
   font-size: 11px;
+  line-height: 1.5em;
 }
 
-/* line 60, src/scss/_modal.scss */
-.modal .modal-content .modal-body form .field-validation-error {
+/* line 72, src/scss/_modal.scss */
+.modal .modal-content .modal-body.modal-w-form form .field-validation-error {
   display: block;
   text-align: left;
   color: red !important;
   font-size: 0.7em !important;
 }
 
-/* line 66, src/scss/_modal.scss */
-.modal .modal-content .modal-body form .action-btn {
-  margin-top: 10px;
+/* line 78, src/scss/_modal.scss */
+.modal .modal-content .modal-body.modal-w-form form .action-btn {
   width: 70%;
   margin: 0 auto;
+  margin-top: 25px;
   background-color: #838383;
   padding: 7px 5px;
-  font-size: 16px;
+  font-size: 1.33em;
   color: #fff;
   border: none;
 }
 
-/* line 78, src/scss/_modal.scss */
-.modal .modal-content .modal-body a.link-signup-forgot {
+/* line 89, src/scss/_modal.scss */
+.modal .modal-content .modal-body.modal-w-form .link-signup-forgot {
   color: #444;
-  font-size: 1.2em;
+  font-size: 0.94em;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;

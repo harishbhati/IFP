@@ -253,19 +253,19 @@
 			<div class="sidebar-action-holder">
 				<ul class="flex">
 					<li>
-						<a href="javascript:void(0);" class="action-btn share" id="shareBtn">
+						<a href="javascript:void(0);" class="action-btn open-modal share" id="shareBtn" data-target="shareModal">
 							<span class="btn-icon icon-share"></span>
 							<span class="btn-text">Share</span>
 						</a>
 					</li>
 					<li>
-						<a href="javascript:void(0);" class="action-btn save" id="planSave">
+						<a href="javascript:void(0);" class="action-btn open-modal save" id="planSave" data-target="signInModal">
 							<span class="btn-icon icon-save"></span>
 							<span class="btn-text">Save</span>
 						</a>
 					</li>
 					<li>
-						<a href="javascript:void(0);" class="action-btn print" id="planPrint">
+						<a href="javascript:void(0);" class="action-btn open-modal print" id="planPrint" data-target="printModal">
 							<span class="btn-icon icon-print"></span>
 							<span class="btn-text">Print</span>
 						</a>
@@ -324,7 +324,7 @@
 						<span class="icon icon-reset"></span>
 						<h3>Share Your Custom Plan</h3>
 					</div>
-					<div class="close">
+					<div class="close-modal">
 						<span class="icon icon-reset"></span>
 					</div>
 				</div>
@@ -341,12 +341,12 @@
 						<span class="icon icon-reset"></span>
 						<h3>Sign In</h3>
 					</div>
-					<div class="close">
+					<div class="close-modal">
 						<span class="icon icon-reset"></span>
 					</div>
 				</div>
-				<div class="modal-body sign-in-modal">
-					<p class="tc form-title">
+				<div class="modal-body modal-w-form">
+					<p class="tc sub-title">
 						Sign in to open and save your designs.
 					</p>
 					<form action="">
@@ -377,12 +377,12 @@
 						<span class="icon icon-reset"></span>
 						<h3>Print</h3>
 					</div>
-					<div class="close">
+					<div class="close-modal">
 						<span class="icon icon-reset"></span>
 					</div>
 				</div>
-				<div class="modal-body sign-in-modal">
-					<p class="tc form-title">
+				<div class="modal-body modal-w-form">
+					<p class="tc sub-title print-sub-title">
 						Thank you for your interest in Belissima 4560 - Villa | Beacon Homes.To print your customized
 						plan, please enter your name and email address.
 					</p>

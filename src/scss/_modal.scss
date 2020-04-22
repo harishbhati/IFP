@@ -21,63 +21,74 @@
             .modal-title {
                 @include flex;
                 align-items: center;
+                /* title*/
                 h3 {
                     color: #fff;
                     font-weight: bold;
                     margin-left: 8px;
-                    font-size: 16px;
+                    font-size: 1.33em;
+                    line-height: 1.52em;
                 }
             }
             .icon {
-                font-size: 16px;
+                font-size: 1.33em;
                 color: #fff;
+            }
+            .close-modal{
+                cursor: pointer;
             }
         }
         .modal-body {
             padding-bottom: 20px;
+            /*share-modal*/
             &.share-modal {
                 margin: 16px auto;
                 width: 203px;
                 height: 32px;
             }
-            p {
-                margin: 15px 0;
-            }
-            .form-title{
-                color: #999;
-                font-size: 1em;
-                padding: 10px;
-                text-align: justify;
-            }
-            form {
-                input {
-                    width: 70%;
-                    background: #ddd;
-                    border: none;
-                    padding: 7px 5px;
-                    font-size: 11px;
+            /* signin and print modal */
+            &.modal-w-form {
+                p {
+                    margin: 15px 0;
                 }
-                .field-validation-error {
-                    display: block;
-                    text-align: left;
-                    color: red !important;
-                    font-size: 0.7em !important;
+                .sub-title {
+                    color: #999;
+                    font-size: 1.067em;
+                    line-height: 1.5em;
+                    &.print-sub-title{
+                        padding: 10px;
+                        text-align: justify;
+                    }
                 }
-                .action-btn {
-                    margin-top: 10px;
-                    width: 70%;
-                    margin: 0 auto;
-                    background-color: #838383;
-                    padding: 7px 5px;
-                    font-size: 16px;
-                    color: #fff;
-                    border: none;
+                form {
+                    input {
+                        width: 70%;
+                        background: #ddd;
+                        border: none;
+                        padding: 7px 5px;
+                        font-size: 11px;
+                        line-height: 1.5em;
+                    }
+                    .field-validation-error {
+                        display: block;
+                        text-align: left;
+                        color: red !important;
+                        font-size: 0.7em !important;
+                    }
+                    .action-btn {
+                        width: 70%;
+                        margin: 0 auto;
+                        margin-top: 25px;
+                        background-color: #838383;
+                        padding: 7px 5px;
+                        font-size: 1.33em;
+                        color: #fff;
+                        border: none;
+                    }
                 }
-            }
-            a {
-                &.link-signup-forgot {
+                .link-signup-forgot {
                     color: #444;
-                    font-size: 1.2em;
+                    font-size: 0.94em;
                     font-weight: bold;
                     text-decoration: none;
                     cursor: pointer;
