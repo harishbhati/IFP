@@ -521,49 +521,58 @@ img {
 
 /* line 33, src/scss/_modal.scss */
 .modal .modal-content .modal-header .icon {
-  font-size: 1.33em;
+  font-size: 1.2em;
   color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 4px;
 }
 
-/* line 37, src/scss/_modal.scss */
+/* line 41, src/scss/_modal.scss */
 .modal .modal-content .modal-header .close-modal {
   cursor: pointer;
 }
 
-/* line 41, src/scss/_modal.scss */
+/* line 45, src/scss/_modal.scss */
 .modal .modal-content .modal-body {
   padding-bottom: 20px;
   /*share-modal*/
   /* signin and print modal */
 }
 
-/* line 44, src/scss/_modal.scss */
+/* line 48, src/scss/_modal.scss */
 .modal .modal-content .modal-body.share-modal {
   margin: 16px auto;
   width: 203px;
   height: 32px;
 }
 
-/* line 51, src/scss/_modal.scss */
+/* line 55, src/scss/_modal.scss */
 .modal .modal-content .modal-body.modal-w-form p {
   margin: 15px 0;
 }
 
-/* line 54, src/scss/_modal.scss */
+/* line 58, src/scss/_modal.scss */
 .modal .modal-content .modal-body.modal-w-form .sub-title {
   color: #999;
   font-size: 1.067em;
   line-height: 1.5em;
 }
 
-/* line 58, src/scss/_modal.scss */
+/* line 62, src/scss/_modal.scss */
 .modal .modal-content .modal-body.modal-w-form .sub-title.print-sub-title {
   padding: 10px;
   text-align: justify;
 }
 
-/* line 64, src/scss/_modal.scss */
-.modal .modal-content .modal-body.modal-w-form form input {
+/* line 67, src/scss/_modal.scss */
+.modal .modal-content .modal-body.modal-w-form .call {
+  display: block;
+}
+
+/* line 71, src/scss/_modal.scss */
+.modal .modal-content .modal-body.modal-w-form form input, .modal .modal-content .modal-body.modal-w-form form textarea {
   width: 70%;
   background: #ddd;
   border: none;
@@ -572,7 +581,7 @@ img {
   line-height: 1.5em;
 }
 
-/* line 72, src/scss/_modal.scss */
+/* line 79, src/scss/_modal.scss */
 .modal .modal-content .modal-body.modal-w-form form .field-validation-error {
   display: block;
   text-align: left;
@@ -580,7 +589,7 @@ img {
   font-size: 0.7em !important;
 }
 
-/* line 78, src/scss/_modal.scss */
+/* line 85, src/scss/_modal.scss */
 .modal .modal-content .modal-body.modal-w-form form .action-btn {
   width: 70%;
   margin: 0 auto;
@@ -592,7 +601,7 @@ img {
   border: none;
 }
 
-/* line 89, src/scss/_modal.scss */
+/* line 96, src/scss/_modal.scss */
 .modal .modal-content .modal-body.modal-w-form .link-signup-forgot {
   color: #444;
   font-size: 0.94em;
