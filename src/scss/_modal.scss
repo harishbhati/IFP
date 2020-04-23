@@ -31,8 +31,12 @@
                 }
             }
             .icon {
-                font-size: 1.33em;
+                font-size: 1.2em;
                 color: #fff;
+                display: inline-block;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                padding: 4px;
             }
             .close-modal{
                 cursor: pointer;
@@ -60,8 +64,11 @@
                         text-align: justify;
                     }
                 }
+                .call{
+                    display: block;
+                }
                 form {
-                    input {
+                    input,textarea {
                         width: 70%;
                         background: #ddd;
                         border: none;

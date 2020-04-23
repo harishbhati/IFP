@@ -57,7 +57,7 @@
 							<a href="#notes" title="Notes"><span class="icon-notes"></span><span>Notes</span></a>
 						</li>
 						<li class="tooltips">
-							<a href="#gallery" title="Gallery"><span class="icon-help"></span><span>Gallery</span></a>
+							<a href="#gallery" title="Gallery"><span class="icon-gallery"></span><span>Gallery</span></a>
 						</li>
 						<li class="tooltips">
 							<a href="#help" title="Help"><span class="icon-help"></span><span>Help</span></a>
@@ -277,10 +277,10 @@
 			<div class="ifp-top-nav">
 				<ul class="flex">
 					<li>
-						<a href="javascript:void(0);"><span class="icon-email"></span> Contact Us</a>
+						<a href="javascript:void(0);" class="open-modal sign-in" id="quote" data-target="quoteModal"><span class="icon-email"></span> Contact Us</a>
 					</li>
 					<li>
-						<a href="javascript:void(0);"><span class="icon-login"></span> Sign In</a>
+						<a href="javascript:void(0);" class="open-modal sign-in" id="signIn" data-target="signInModal"><span class="icon-login"></span> Sign In</a>
 					</li>
 				</ul>
 			</div>
@@ -321,11 +321,11 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<div class="modal-title">
-						<span class="icon icon-reset"></span>
+						<span class="icon icon-share"></span>
 						<h3>Share Your Custom Plan</h3>
 					</div>
 					<div class="close-modal">
-						<span class="icon icon-reset"></span>
+						<span class="icon icon-cross"></span>
 					</div>
 				</div>
 				<div class="modal-body share-modal">
@@ -338,11 +338,11 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<div class="modal-title">
-						<span class="icon icon-reset"></span>
+						<span class="icon icon-sign-out"></span>
 						<h3>Sign In</h3>
 					</div>
 					<div class="close-modal">
-						<span class="icon icon-reset"></span>
+						<span class="icon icon-cross"></span>
 					</div>
 				</div>
 				<div class="modal-body modal-w-form">
@@ -374,11 +374,11 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<div class="modal-title">
-						<span class="icon icon-reset"></span>
+						<span class="icon icon-email"></span>
 						<h3>Print</h3>
 					</div>
 					<div class="close-modal">
-						<span class="icon icon-reset"></span>
+						<span class="icon icon-cross"></span>
 					</div>
 				</div>
 				<div class="modal-body modal-w-form">
@@ -400,6 +400,51 @@
 							<span class="field-validation-error"></span>
 						</p>
 						<button class="action-btn">Sign In</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Quote -->
+		<div class="modal" id="quoteModal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<span class="icon icon-email"></span>
+						<h3>Contact Us</h3>
+					</div>
+					<div class="close-modal">
+						<span class="icon icon-cross"></span>
+					</div>
+				</div>
+				<div class="modal-body modal-w-form">
+					<form action="">
+						<p class="tc">
+							<input type="text" name="name" placeholder="Name">
+							<span class="field-validation-error"></span>
+						</p>
+						<p class="tc">
+							<input type="email" name="email" placeholder="Email">
+							<span class="field-validation-error"></span>
+						</p>
+						<p class="tc">
+							<input type="tel" name="phone" placeholder="Phone">
+							<span class="field-validation-error"></span>
+						</p>
+						<p class="tc">
+							<input type="text" name="" placeholder="Where do you want to live?">
+							<span class="field-validation-error"></span>
+						</p>
+						<p class="tc">
+							<textarea rows="5" placeholder="Message"> </textarea>
+							<span class="field-validation-error"></span>
+						</p>
+						<div class="tc">
+							<div id="recaptcha1" class="g-recaptcha"></div>
+						</div>
+						<button class="action-btn">Send</button>
+						<p class="tc contact-footer">
+							To speak with a New Home Consultant, <span class="call">call 512-651-8894</span>
+						</p>
 					</form>
 				</div>
 			</div>

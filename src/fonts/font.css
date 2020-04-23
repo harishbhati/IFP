@@ -19,6 +19,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-gallery:before {
+  content: "\e914";
+}
+.icon-cross:before {
+  content: "\e911";
+}
+.icon-sign-out:before {
+  content: "\e912";
+}
+.icon-user-plus:before {
+  content: "\e913";
+}
 .icon-arrow-dn:before {
   content: "\e900";
 }
